@@ -10,14 +10,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     TextView decimalTxtBox, decimalSelectTxtView;
     TextView hexaTextBox, HexaSelectTextView;
-    Button  aBtn;
-    Button  bBtn;
-    Button  cBtn;
-    Button  dBtn;
-    Button  eBtn;
-    Button  fBtn;
+    Button  aBtn , bBtn , cBtn , dBtn, eBtn, fBtn;
+
 
     CharSequence currentDecialTxtBox;
+
+    enum buttonClick{decimal, binary , ocatal ,hexa};
+    buttonClick buttonClciked = buttonClick.decimal;//defualt ->TODO:decimal
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         decimalSelectTxtView = findViewById(R.id.decimalSelectTxtView);
         HexaSelectTextView = findViewById(R.id.HexaSelectTextView);
+
         decimalTxtBox = findViewById(R.id.DecimalTxtbox);
         hexaTextBox = findViewById(R.id.hexaTextBox);
 
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         eBtn = findViewById(R.id.eBtn);
         fBtn = findViewById(R.id.fBtn);
 
+
     }
 
 
@@ -43,7 +44,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.aBtn:
+
+            case  R.id.decimalSelectTxtView:
+                buttonClciked = buttonClick.decimal;
+                break;
+            case  R.id.HexaSelectTextView:
+                buttonClciked = buttonClick.hexa;
+                break;
+            case  R.id.OctalSelectTextView:
+                buttonClciked = buttonClick.ocatal;
+                break;
+            case  R.id.binarySelectTextView:
+                buttonClciked = buttonClick.binary;
+                break;
+
+                default:
+                    TextView viewBox = findViewById(v.getId());
+                    String btnText = viewBox.getText().toString();
+                    setTextOnScreen(buttonClciked, btnText );
+                    break;
+
+
+           /* case R.id.aBtn:
                 currentDecialTxtBox = hexaTextBox.getText();
                 hexaTextBox.setText(currentDecialTxtBox + "A");
                 //convert to all other
@@ -72,7 +94,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 currentDecialTxtBox = hexaTextBox.getText();
                 hexaTextBox.setText(currentDecialTxtBox + "F");
                 //convert to all other
-                break;
+                break;*/
+        }
+    }
+
+    private  void setTextOnScreen(buttonClick buttonClciked, String text)
+    {
+        if (buttonClciked.equals(buttonClick.decimal))
+        {
+            hexaTextBox.append((text));
         }
     }
 }
