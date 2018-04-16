@@ -42,7 +42,7 @@
                 android:text="Octaly" />
 
             <TextView
-                android:id="@+id/HexaSeelectTextView"
+                android:id="@+id/HexaSelectTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -200,17 +200,19 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/aBtn"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="A"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="214dp" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/bBtn"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="B"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="214dp" />
@@ -254,17 +256,19 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/cBtn"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="C"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="214dp" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/dBtn"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="D"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="214dp" />
@@ -308,17 +312,19 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/eBtn"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="E"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="214dp" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/fBtn"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="F"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="214dp" />
