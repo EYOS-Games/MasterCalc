@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\User\\Documents\\MasterCalc\\funCalculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "outputFile": "C:\\Users\\ofir\\source\\repos\\MasterCalc\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\f84ddfe67ec11125b79c21f6c25d6179\\res\\values-bs\\values-bs.xml",
+                    "source": "C:\\Users\\ofir\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\643319a88f36343d5fd124b634e322c9\\res\\values-bs\\values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5085df3038eb2161dcfb8264d20e9609\\res\\values-bs\\values-bs.xml",
+                    "source": "C:\\Users\\ofir\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\92d97ae7167144ec5c8e17b7105d44db\\res\\values-bs\\values-bs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
